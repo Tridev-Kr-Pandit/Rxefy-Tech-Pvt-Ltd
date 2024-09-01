@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            min-height: 50vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        a{
+            text-decoration: none;
+            font-size: 20px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome <%= name %></h1>
+        <h3>Your Name:  <%= name %></h3>
+        <h3>Your Adhar number: <%= aadhaarNumber %></h3>
+        <button><a href="/">Select another image</a></button>
+    </div>
+</body>
+</html>

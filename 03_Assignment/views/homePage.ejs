@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Uploads</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            /* min-height: 50vh; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 30px;
+            width: 500px;
+            background-color:aqua;
+            border-radius: 10px ;
+        }
+        .container input, button{
+            /* width: 100%;
+            height: 40px; */
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="/getimage" method="POST" enctype="multipart/form-data">
+            <input type="file" name="AdharImage">
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+</body>
+</html>
